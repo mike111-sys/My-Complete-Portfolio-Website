@@ -12,20 +12,9 @@ const Hero = () => {
       <img src={profile_img} className="profile-pic" alt="" />
 
       <div className="container">
-        <div className="box">
-          <div className="title">
-            <span className="block"></span>
-            <h1>
-              Michael Chege<span></span>
-            </h1>
-          </div>
-          <div className="role">
-            <div className="block"></div>
-            <p className="stack">Web Developer</p>
-          </div>
-        </div>
+        <h1>Michael Chege</h1>
       </div>
-
+      
       <p>
         Welcome to my website. I am a frontend developer with a strong record of
         building responsive, user-friendly web interfaces using modern

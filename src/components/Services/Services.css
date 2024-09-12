@@ -70,45 +70,7 @@
 
 
 @media (max-width: 1300px) {
-  .services {
-    gap: 70px;
-    margin: 90px 70px;
-  }
-  .services-title h1 {
-    padding: 0;
-    font-size: 33px;
-  }
-  .services-title img {
-    width: 74px;
-    margin-right: -20px;
-  }
-  .service-web-design {
-    gap: 0px;
-    height: 103px;
-    width: 105px;
-  }
-  .service-number {
-    font-size: 17px;
-  }
-  .service-header {
-    font-size: 23px;
-  }
-  .web-image {
-    height: 90px;
-    width: 80px;
-  }
-  .graphics-image {
-    height: 90px;
-    width: 100px;
-  }
-  .marketing-image {
-    height: 90px;
-    width: 100px;
-  }
-  .services-container {
-    flex-direction: column;
-    gap: 17px;
-  }
+
 }
 @media (max-width: 990px) {
   .services {

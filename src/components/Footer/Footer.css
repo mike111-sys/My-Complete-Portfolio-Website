@@ -63,7 +63,12 @@
   transform: scale(1.1);
   transition: 0.3s;
 }
+
+
 @media (max-width: 1300px) {
+
+}
+@media (max-width: 990px) {
   .footer {
     margin: 30px 30px;
   }

@@ -65,7 +65,10 @@ margin-bottom: -40px;
 
 
 
-  @media(max-width:1300px){
+@media (max-width: 1300px) {
+
+}
+@media (max-width: 990px) {
   
 .hero img{
     height: 240px;

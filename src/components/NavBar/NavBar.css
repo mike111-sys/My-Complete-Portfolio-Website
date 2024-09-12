@@ -57,7 +57,12 @@
   color: white;
 }
 
+
+
 @media (max-width: 1300px) {
+
+}
+@media (max-width: 990px) {
   .navbar {
     margin: 20px 50px;
   }

@@ -86,6 +86,9 @@
 }
 
 @media (max-width: 1300px) {
+
+}
+@media (max-width: 990px) {
   .about {
     gap: 80px;
     margin: 50px 70px;

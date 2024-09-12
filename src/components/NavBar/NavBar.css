@@ -63,9 +63,7 @@
   .navbar {
     margin: 20px 50px;
   }
-  .nav-connect {
-    display: none;
-  }
+
   .nav-mob-open {
     display: block;
     position: fixed;

@@ -9,7 +9,7 @@ const onSubmit = async (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
 
-  formData.append("access_key", "ffc77064-7c0b-4b3f-b9ed-6b03ca10667b");
+  formData.append("access_key", "cab23759-cf73-477c-bdcc-139e11e4e7ec");
 
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
@@ -44,10 +44,10 @@ const Contact = () => {
             contact anytime
           </p>
           <div className="contact-detail">
-            <img src={mail_icon} alt="" /> <p>mikechege770@gmail.com</p>
+            <img src={mail_icon} alt="" /> <p>contact.mikechege@gmail.com</p>
           </div>
           <div className="contact-detail">
-            <img src={telephone_icon} alt="" /> <p>+254112770494</p>
+            <img src={telephone_icon} alt="" /> <p>+254741238738</p>
           </div>
           <div className="contact-detail">
             <img src={location_icon} alt="" /> <p>Nakuru, Kenya</p>

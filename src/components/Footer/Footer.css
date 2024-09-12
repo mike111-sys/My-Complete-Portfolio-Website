@@ -66,7 +66,40 @@
 
 
 @media (max-width: 1300px) {
+  .footer {
+    margin: 30px 30px;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
+  .footer-bottom-right p {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .footer-bottom-right {
+    gap: 29px;
+  }
+.footer-bottom-right p{
+  font-size: 10px;
+}
 
+  .footer-top-left img {
+    width: 79px;
+    margin-bottom: -45px;
+  }
+  .footer-email-input {
+    display: none;
+  }
+  .footer-subscribe {
+    display: none;
+  }
 }
 @media (max-width: 990px) {
   .footer {

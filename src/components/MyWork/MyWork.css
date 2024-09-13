@@ -63,7 +63,7 @@
 
 
 
-@media (max-width: 1300px) {
+@media (min-width: 1029px) {
   .mywork {
     gap: 2px;
     margin: 50px 70px;

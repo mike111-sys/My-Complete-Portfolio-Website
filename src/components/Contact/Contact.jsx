@@ -5,30 +5,34 @@ import telephone_icon from "../../assets/telephone-2.png";
 import mail_icon from "../../assets/mail-2.png";
 import location_icon from "../../assets/location-2.png";
 
-const onSubmit = async (event) => {
-  event.preventDefault();
-  const formData = new FormData(event.target);
-
-  formData.append("access_key", "cab23759-cf73-477c-bdcc-139e11e4e7ec");
-
-  const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
-
-  const res = await fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: json,
-  }).then((res) => res.json());
-
-  if (res.success) {
-    alert(res.message);
-  }
-};
 
 const Contact = () => {
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "cab23759-cf73-477c-bdcc-139e11e4e7ec");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div id="contact" className="contact">
       <div className="contact-title">

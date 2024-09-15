@@ -91,11 +91,11 @@
 @media (max-width: 990px) {
   .about {
     gap: 80px;
-    margin: 50px 19px;
+    margin: 50px 40px;
     width: 80%;
   }
   .about-title{
-    margin-left: -27%;
+    margin-left: -25%;
   }
 
   .about-title h1 {

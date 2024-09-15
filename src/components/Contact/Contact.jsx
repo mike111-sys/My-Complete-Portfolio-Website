@@ -30,6 +30,8 @@ const onSubmit = async (event) => {
 
 const Contact = () => {
   return (
+
+
     <div id="contact" className="contact">
       <div className="contact-title">
         <h1>Get in touch</h1>
@@ -70,6 +72,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
+    
   );
 };
 

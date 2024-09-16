@@ -20,7 +20,7 @@
 }
 .mywork {
   position: relative;
-  left: 5%%;
+  left: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,10 +63,11 @@
 
 
 
-@media (min-width: 1029px) {
+@media (min-width: 990px) {
   .mywork {
     gap: 2px;
-    margin: 50px 70px;
+    position: relative;
+    left: 0px;
   }
   .mywork-title h1 {
     padding: 0;
@@ -105,15 +106,37 @@
     margin-right: -70px;
   }
   .mywork-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    left: -60px;
   }
   .mywork-container img {
     width: 260px;
   }
   .mywork-showmore {
     padding: 15px 25px;
-    font-size: 18px;
+    font-size: 15px;
     margin: 90px auto;
     cursor: pointer;
+    position: relative;
+    left: -50px;
+  }
+}
+@media (max-width: 636px) {
+  .mywork {
+    gap: 0px;
+    position: relative;
+    left: 60px;
+  }
+}
+@media (max-width: 572px) {
+  .mywork-container {
+    grid-template-columns: 1fr;
+  }
+  .mywork-showmore {
+    padding: 12px 22px;
+   font-size: 13px;
+    position: relative;
+    left: -60px;
   }
 }

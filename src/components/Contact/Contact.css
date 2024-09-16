@@ -105,10 +105,39 @@
 }
 
 
+/* ---- Media Query ---- */
+
 @media (min-width: 1029px) {
 
 }
-@media (max-width: 990px) {
+
+@media (max-width: 960px) {
+  .contact-title h1 {
+    font-size: 26px;
+    font-weight: 300;
+  }
+  .contact-title img {
+    width: 54px;
+    margin-right: 19px;
+  }
+  .contact-left h1 {
+    font-size: 30px;
+  }
+  .contact-left p {
+    font-size: 13px;
+  }
+  .contact-right input {
+    width: 80%;
+    font-size: 15px;
+  }
+  .contact-right textarea {
+    width: 350px;
+    height: 140px;
+  }
+
+}
+
+@media (max-width: 770px) {
   .contact {
     gap: 50px;
     margin: 50px 48px;

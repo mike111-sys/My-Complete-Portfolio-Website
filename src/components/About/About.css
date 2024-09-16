@@ -177,12 +177,21 @@
   }
 }
 @media (max-width: 694px) {
+  .about-para {
+    line-height: 32px;
+   
+  }
+
 .about{
-  margin: 10px 90px;
+  margin: 10px 30px;
+  align-items: start;
 }
 .about-title img {
   width: 70px;
   right: -9px;
+}
+.about-title {
+  left: 30%;
 }
 }
 @media (max-width: 344px) {

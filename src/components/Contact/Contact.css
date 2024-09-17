@@ -41,8 +41,11 @@
 .contact-left p {
   max-width: 550px;
   color: #d8d8d8;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 30px;
+}
+.contact-left .contact-detail p{
+  font-size: 10px;
 }
 .contact-details {
   display: flex;

@@ -20,6 +20,7 @@
   right: 0;
   z-index: -1;
 }
+
 .contact-section {
   display: flex;
   gap: 150px;
@@ -40,7 +41,7 @@
 .contact-left p {
   max-width: 550px;
   color: #d8d8d8;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 30px;
 }
 .contact-details {

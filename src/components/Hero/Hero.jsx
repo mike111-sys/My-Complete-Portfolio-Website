@@ -2,8 +2,12 @@ import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./Hero.css";
 import profile_img from "../../assets/mikee-pic.jpg";
+import TypingEffect from './TypingEffect';
 
 const Hero = () => {
+
+  const texts = ['Frontend web development', 'Graphics design', 'Digital marketing'];
+
   return (
     <div id="home" className="hero">
       <div />
@@ -12,14 +16,17 @@ const Hero = () => {
       <img src={profile_img} className="profile-pic" alt="" />
 
       <div className="container">
+      
         <h1>Michael Chege</h1>
       </div>
       
-      <p>
-        Welcome to my website. I am a frontend developer with a strong record of
+  <p>    
+        Welcome to my website. I have a strong record of
         building responsive, user-friendly web interfaces using modern
-        technologies.
-      </p>
+        technologies. I specialize in;
+        <TypingEffect textArray={texts} typingSpeed={150} />
+          </p>
+      
       <div className="hero-action">
         <div className="hero-connect">
           <AnchorLink className="anchor-link" offset={20} href="#contact">

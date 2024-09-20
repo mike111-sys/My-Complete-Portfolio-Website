@@ -20,7 +20,7 @@ const Hero = () => {
         <h1>Michael Chege</h1>
       </div>
       
-  <p>    
+  <p className="fade-in">    
         Welcome to my website. I have a strong record of
         building responsive, user-friendly web interfaces using modern
         technologies. I specialize in;
@@ -28,12 +28,12 @@ const Hero = () => {
           </p>
       
       <div className="hero-action">
-        <div className="hero-connect">
+        <div className="hero-connect fade-in">
           <AnchorLink className="anchor-link" offset={20} href="#contact">
             Connect with me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My resume</div>
+        <div className="hero-resume fade-in">My resume</div>
       </div>
     </div>
   );

@@ -85,6 +85,9 @@
   transition: 0.5s;
 }
 
+
+/* ----- Media Query ----- */
+
 @media (min-width: 1029px) {
 
 }

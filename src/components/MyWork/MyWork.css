@@ -63,6 +63,9 @@
 
 
 
+/* ----- Media Query ----- */
+
+
 @media (min-width: 990px) {
   .mywork {
     gap: 2px;

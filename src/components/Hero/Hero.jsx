@@ -9,7 +9,7 @@ const Hero = () => {
   const texts = ['Frontend web development', 'Graphics design', 'Digital marketing'];
 
   return (
-    <div id="home" className="hero">
+    <div id="home" className="hero fade-in">
       <div />
       <div />
       <div />

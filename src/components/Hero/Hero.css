@@ -4,6 +4,9 @@
     flex-direction: column;
     gap: 35px;
 }
+.fade-in {
+    animation: fadeIn 2.5s ease-in forwards; /* Adjust duration as needed */
+  }
 
 .hero .container h1{
     width: 100%;
@@ -57,6 +60,14 @@ margin-bottom: -40px;
 
 }
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 /* ----- Media Query ----- */
 

@@ -2,9 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: 2px 170px;
- 
 }
-
 
 .nav-mob-close {
   display: none;

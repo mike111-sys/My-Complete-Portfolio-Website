@@ -9,13 +9,13 @@ const Hero = () => {
   const texts = ['Frontend web development', 'Graphics design', 'Digital marketing'];
 
   return (
-    <div id="home" className="hero fade-in">
+    <div id="home" className="hero">
       <div />
       <div />
       <div />
-      <img src={profile_img} className="profile-pic" alt="" />
+      <img src={profile_img} className="profile-pic fade-in" alt="" />
 
-      <div className="container">
+      <div className="container fade-in">
       
         <h1>Michael Chege</h1>
       </div>

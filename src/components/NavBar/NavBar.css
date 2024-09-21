@@ -81,6 +81,7 @@
   .nav-menu li {
     font-size: 16px;
   }
+
   .navbar {
     display: flex;
     margin: 2px 17px;
@@ -122,6 +123,9 @@
   }
   .nav-connect {
     display: none;
+  }
+  .slide-from-top{
+    animation: none;
   }
   .nav-mob-open {
     display: block;

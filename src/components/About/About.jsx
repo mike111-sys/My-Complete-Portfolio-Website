@@ -18,7 +18,7 @@ const About = () => {
         >About me</motion.h1>
         <motion.img
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: -70 }}
         transition={{ duration: 1.5 }}
         src={theme_pattern} alt="" />
       </div>

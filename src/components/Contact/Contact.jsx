@@ -35,15 +35,23 @@ const Contact = () => {
 
 
     <div id="contact" className="contact">
-      <motion.div
-      whileInView={{ opacity: 1, y: 0 }}
-      initial={{ opacity: 0, y: -30 }}
-      transition={{ duration: 1.5 }}
+      <div
+      
       
       className="contact-title">
-        <h1>Get in touch</h1>
-        <img src={theme_pattern} alt="" />
-      </motion.div>
+        <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -30 }}
+        transition={{ duration: 1.5 }}
+        
+        >Get in touch</motion.h1>
+        <motion.img
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -70 }}
+        transition={{ duration: 1.5 }}
+        
+        src={theme_pattern} alt="" />
+      </div>
       <div className="contact-section">
         <motion.div
         whileInView={{ opacity: 1, x: 0 }}

@@ -8,15 +8,23 @@ import { motion } from "framer-motion";
 const MyWork = () => {
   return (
     <>
-      <motion.div
-      whileInView={{ opacity: 1, y: 0 }}
-      initial={{ opacity: 0, y: -30 }}
-      transition={{ duration: 1.5 }}
+      <div
+      
       
       className="mywork-title">
-        <h1>My latest work</h1>
-        <img src={theme_pattern} alt="" />
-      </motion.div>
+        <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -30 }}
+        transition={{ duration: 1.5 }}
+        
+        >My latest work</motion.h1>
+        <motion.img
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -70 }}
+        transition={{ duration: 1.5 }}
+        
+        src={theme_pattern} alt="" />
+      </div>
       <div id="work" className="mywork fade-in">
         <motion.div 
          whileInView={{ opacity: 1, x: 0 }}

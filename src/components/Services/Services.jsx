@@ -4,17 +4,28 @@ import theme_pattern from "../../assets/diamond-theme.png";
 import web_pic from "../../assets/internet-logoo.jpg";
 import graphics from "../../assets/graphic-designnn.jpg";
 import logo from "../../assets/mine.png";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <div id="services" className="services fade-in">
+    <div id="services" className="services">
       <div />
       <div />
-      <div className="services-title">
+      <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: -100 }}
+      transition={{ duration: 1.5 }}
+      
+      className="services-title">
         <h1>My Services</h1>
         <img src={theme_pattern} alt="" />
-      </div>
-      <div className="services-container">
+      </motion.div>
+      <motion.div
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: -100 }}
+      transition={{ duration: 1.5 }}
+      
+      className="services-container">
         <div className="service-web-design">
           <h3 className="service-number">01</h3>
           <h2 className="service-header">Web Design</h2>
@@ -35,7 +46,7 @@ const Services = () => {
           <img src={logo} alt="" className="marketing-image" />
           <p> </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

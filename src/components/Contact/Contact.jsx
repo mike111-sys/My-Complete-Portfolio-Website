@@ -4,6 +4,8 @@ import theme_pattern from "../../assets/diamond-theme.png";
 import telephone_icon from "../../assets/telephone-2.png";
 import mail_icon from "../../assets/mail-2.png";
 import location_icon from "../../assets/location-2.png";
+import { motion } from "framer-motion";
+
 
 const onSubmit = async (event) => {
   event.preventDefault();
@@ -32,14 +34,24 @@ const Contact = () => {
   return (
 
 
-    <div id="contact" className="contact fade-in">
-      <div className="contact-title">
+    <div id="contact" className="contact">
+      <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: -100 }}
+      transition={{ duration: 1.5 }}
+      
+      className="contact-title">
         <h1>Get in touch</h1>
         <img src={theme_pattern} alt="" />
-      </div>
+      </motion.div>
       <div className="contact-section">
-        <div className="contact-left">
-          <h1>Let's talk</h1>
+        <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1  }}
+        
+        className="contact-left">
+          <h1 >Let's talk</h1>
           <p>
             I am currently available to take on new projects, so feel free to
             send me a message about anything you want me to work on. You can
@@ -54,8 +66,13 @@ const Contact = () => {
           <div className="contact-detail">
             <img src={location_icon} alt="" /> <p>Nakuru, Kenya</p>
           </div>
-        </div>
-        <form onSubmit={onSubmit} className="contact-right">
+        </motion.div>
+        <motion.form
+         whileInView={{ opacity: 1, x: 0 }}
+         initial={{ opacity: 0, x: 100 }}
+         transition={{ duration: 1  }}
+        
+        onSubmit={onSubmit} className="contact-right">
           <label htmlFor="">Your Name:</label>
           <input type="text" placeholder="Enter your name" name="name" />
           <label htmlFor="">Your Email:</label>
@@ -69,7 +86,7 @@ const Contact = () => {
           <button type="submit" className="contact-submit">
             Submit now
           </button>
-        </form>
+        </motion.form>
       </div>
     </div>
     

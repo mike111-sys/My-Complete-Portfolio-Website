@@ -1,32 +1,57 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../assets/logo.png";
+import { motion } from "framer-motion";
+
 
 const Footer = () => {
   return (
-    <div className="footer fade-in" >
+    <div className="footer" >
       <div className="footer-top">
-        <div className="footer-top-left">
+        <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1  }}
+        
+        className="footer-top-left">
           <img src={logo} alt="" />
-        </div>
-        <div className="footer-top-right">
-          <div className="footer-email-input">
+        </motion.div>
+        <motion.div
+         whileInView={{ opacity: 1, x: 0 }}
+         initial={{ opacity: 0, x: 100 }}
+         transition={{ duration: 1  }}
+        
+        
+        className="footer-top-right">
+          <div
+          
+          className="footer-email-input">
             <img src="" alt="" />
             <input type="email" placeholder="Enter your email" />
           </div>
           <div className="footer-subscribe">Subscribe</div>
-        </div>
+        </motion.div>
       </div>
       <hr />
       <div className="footer-bottom">
-        <p className="footer-bottom-left">
+        <motion.p 
+         whileInView={{ opacity: 1, x: 0 }}
+         initial={{ opacity: 0, x: -100 }}
+         transition={{ duration: 1  }}
+
+        className="footer-bottom-left">
           © 2024 Michael Chege. All rights reserved.
-        </p>
-        <div className="footer-bottom-right">
+        </motion.p>
+        <motion.div
+         whileInView={{ opacity: 1, x: 0 }}
+         initial={{ opacity: 0, x: 100 }}
+         transition={{ duration: 1  }}
+        
+        className="footer-bottom-right">
           <p>Term of Services</p>
           <p>Privacy Policy</p>
           <p>Connect with me</p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

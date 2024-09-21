@@ -6,9 +6,7 @@
   gap: 80px;
   margin: 80px 170px;
 }
-.fade-in {
-  animation: fadeIn 2.5s ease-in forwards; /* Adjust duration as needed */
-}
+
 .contact-title {
   position: relative;
 }
@@ -111,14 +109,7 @@
   transition: 0.3s;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 
 

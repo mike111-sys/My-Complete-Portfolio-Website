@@ -37,13 +37,13 @@ const NavBar = () => {
           {menu === "home" ? <img src={underline_theme} alt="" /> : <></>}
         </li>
         <li>
-          <AnchorLink className="anchor-link" offset={-150} href="#about">
+          <AnchorLink className="anchor-link" offset={-100} href="#about">
             <p onClick={() => SetMenu("about")}>About Me</p>
           </AnchorLink>
           {menu === "about" ? <img src={underline_theme} alt="" /> : <></>}
         </li>
         <li>
-          <AnchorLink className="anchor-link" offset={-140} href="#services">
+          <AnchorLink className="anchor-link" offset={-90} href="#services">
             <p onClick={() => SetMenu("services")}>Services</p>
           </AnchorLink>
           {menu === "services" ? <img src={underline_theme} alt="" /> : <></>}
@@ -55,14 +55,14 @@ const NavBar = () => {
           {menu === "work" ? <img src={underline_theme} alt="" /> : <></>}
         </li>
         <li>
-          <AnchorLink className="anchor-link" offset={20} href="#contact">
+          <AnchorLink className="anchor-link" offset={70} href="#contact">
             <p onClick={() => SetMenu("contact")}>Contact</p>
           </AnchorLink>
           {menu === "contact" ? <img src={underline_theme} alt="" /> : <></>}
         </li>
       </ul>
       <div className="nav-connect">
-        <AnchorLink className="anchor-link" offset={20} href="#contact">
+        <AnchorLink className="anchor-link" offset={70} href="#contact">
           Connect With Me
         </AnchorLink>
       </div>

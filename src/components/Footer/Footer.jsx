@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer fade-in" >
       <div className="footer-top">
         <div className="footer-top-left">
           <img src={logo} alt="" />

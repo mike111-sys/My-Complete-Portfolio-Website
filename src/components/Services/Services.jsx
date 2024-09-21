@@ -7,7 +7,7 @@ import logo from "../../assets/mine.png";
 
 const Services = () => {
   return (
-    <div id="services" className="services">
+    <div id="services" className="services fade-in">
       <div />
       <div />
       <div className="services-title">

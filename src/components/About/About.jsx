@@ -5,7 +5,7 @@ import profile_image from "../../assets/mikoo.jpg";
 
 const About = () => {
   return (
-    <div id="about" className="about">
+    <div id="about" className="about fade-in">
       <div />
       <div />
       <div className="about-title">

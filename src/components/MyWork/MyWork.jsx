@@ -7,11 +7,11 @@ import arrow_icon from "../../assets/arrow-icon.jpg";
 const MyWork = () => {
   return (
     <>
-      <div className="mywork-title">
+      <div className="mywork-title fade-in">
         <h1>My latest work</h1>
         <img src={theme_pattern} alt="" />
       </div>
-      <div id="work" className="mywork">
+      <div id="work" className="mywork fade-in">
         <div className="mywork-container">
           {mywork_data.map((work, index) => {
             return <img key={index} src={work.w_img} alt="" />;

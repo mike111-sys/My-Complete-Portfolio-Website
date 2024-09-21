@@ -32,7 +32,7 @@ const Contact = () => {
   return (
 
 
-    <div id="contact" className="contact">
+    <div id="contact" className="contact fade-in">
       <div className="contact-title">
         <h1>Get in touch</h1>
         <img src={theme_pattern} alt="" />

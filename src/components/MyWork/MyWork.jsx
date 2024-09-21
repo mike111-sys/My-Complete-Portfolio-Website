@@ -10,7 +10,7 @@ const MyWork = () => {
     <>
       <motion.div
       whileInView={{ opacity: 1, y: 0 }}
-      initial={{ opacity: 0, y: -100 }}
+      initial={{ opacity: 0, y: -30 }}
       transition={{ duration: 1.5 }}
       
       className="mywork-title">

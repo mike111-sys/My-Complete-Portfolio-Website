@@ -12,7 +12,7 @@ const About = () => {
       <div className="about-title">
         <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: -30 }}
         transition={{ duration: 1.5 }}
         
         >About me</motion.h1>

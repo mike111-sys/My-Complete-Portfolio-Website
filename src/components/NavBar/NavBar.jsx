@@ -19,7 +19,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="navbar">
+    <div className="navbar slide-from-top">
       <img src={logo} alt="" className="logo" />
       <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
 

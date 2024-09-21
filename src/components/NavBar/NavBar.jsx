@@ -5,6 +5,7 @@ import logo from "../../assets/logo.png";
 import underline_theme from "../../assets/underline-themeee.png";
 import menu_open from "../../assets/menull.png";
 import menu_close from "../../assets/menu_closeee.jpg";
+import { motion } from 'framer-motion';
 
 const NavBar = () => {
   const [menu, SetMenu] = useState("home");
@@ -18,8 +19,19 @@ const NavBar = () => {
     menuRef.current.style.left = "-350px";
   };
 
+  const navStyle = {
+   
+  };
+
+
   return (
-    <div className="navbar">
+    <motion.div 
+    initial={{ x: '-100vw' }} // Start off-screen to the left
+    animate={{ x: 0 }}        // Animate to final position
+    transition={{ type: 'spring', stiffness: 20, duration: 0.7 }} // Smooth transition
+    style={navStyle} // Optional styling
+    
+    className="navbar">
       <img src={logo} alt="" className="logo" />
       <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
 
@@ -66,7 +78,7 @@ const NavBar = () => {
           Connect With Me
         </AnchorLink>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

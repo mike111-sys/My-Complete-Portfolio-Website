@@ -39,8 +39,10 @@ const About = () => {
           
           className="about-para">
             <p>
-              I have a strong enthusiasm for developing user-friendly web
-              interfaces and am a devoted frontend developer. I've developed my
+            I am a passionate full stack developer with a knack for crafting 
+            robust and scalable web applications. My goal is to leverage my
+             expertise to create innovative solutions that drive business growth
+              and deliver exceptional user experiences. I've developed my
               expertise also in digital marketing over the years, with a focus
               on influencer marketing, content marketing, web analytics, and
               local SEO. In addition, i adore using the newest software tools to
@@ -68,19 +70,19 @@ const About = () => {
               <hr style={{ width: "65%" }} />
             </div>
             <div className="about-skill">
-              <p>TypeScript</p>
-              <hr style={{ width: "55%" }} />
+              <p>Git</p>
+              <hr style={{ width: "52%" }} />
             </div>
             <div className="about-skill">
               <p>React Js</p>
               <hr style={{ width: "70%" }} />
             </div>
             <div className="about-skill">
-              <p>Next Js</p>
+              <p>SQL</p>
               <hr style={{ width: "60%" }} />
             </div>
             <div className="about-skill">
-              <p>Figma</p>
+              <p>Express Js</p>
               <hr style={{ width: "63%" }} />
             </div>
           </motion.div>

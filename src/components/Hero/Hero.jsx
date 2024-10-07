@@ -6,7 +6,7 @@ import TypingEffect from './TypingEffect';
 
 const Hero = () => {
 
-  const texts = ['Frontend web development', 'Graphics design', 'Digital marketing'];
+  const texts = ['Full Stack web development', 'Graphics design', 'Digital marketing'];
 
   return (
     <div id="home" className="hero">
@@ -22,7 +22,7 @@ const Hero = () => {
       
   <p className="fade-in">    
         Welcome to my website. I have a strong record of
-        building responsive, user-friendly web interfaces using modern
+        building responsive, user-friendly web applications using modern
         technologies. I specialize in;
         <TypingEffect textArray={texts} typingSpeed={150} />
           </p>

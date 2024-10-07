@@ -71,7 +71,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  color: white;
+  color:rgb(30, 240, 7);
   font-size: 16px;
   text-align: center;
 }

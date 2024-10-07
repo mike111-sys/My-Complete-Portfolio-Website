@@ -51,12 +51,15 @@
   gap: 10px;
   border-radius: 50px;
   border: 2px solid white;
-  padding: 20px 40px;
+  padding: 20px 35px;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 80px;
   transition: 0.6s;
   cursor: pointer;
+}
+.mywork-showmore p{
+  font-size: 13px;
 }
 .mywork-showmore:hover {
   gap: 25px;

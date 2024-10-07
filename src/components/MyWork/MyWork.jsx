@@ -10,14 +10,14 @@ import project_5 from "../../assets/project_5.jpg";
 import project_6 from "../../assets/project_6.jpg";
 import { motion } from "framer-motion";
 
-// Locally defined mywork_data with image imports
+// Updated mywork_data with two name fields (w_name and w_type)
 const mywork_data = [
-  { w_no: 1, w_name: "React Js", w_img: project_1 },
-  { w_no: 2, w_name: "React Js", w_img: project_2 },
-  { w_no: 3, w_name: "React Js", w_img: project_3 },
-  { w_no: 4, w_name: "React Js", w_img: project_4 },
-  { w_no: 5, w_name: "React Js", w_img: project_5 },
-  { w_no: 6, w_name: "Graphics Design", w_img: project_6 }
+  { w_no: 1, w_name: "Web App", w_type: "-React Js", w_img: project_1 },
+  { w_no: 2, w_name: "Web App", w_type: "-React Js", w_img: project_2 },
+  { w_no: 3, w_name: "Web App", w_type: "-React Js", w_img: project_3 },
+  { w_no: 4, w_name: "Web App", w_type: "-React Js", w_img: project_4 },
+  { w_no: 5, w_name: "Web App", w_type: "-React Js", w_img: project_5 },
+  { w_no: 6, w_name: "Graphics Design", w_type: "-Creative Projects", w_img: project_6 }
 ];
 
 const MyWork = () => {
@@ -50,7 +50,10 @@ const MyWork = () => {
           {mywork_data.map((work, index) => (
             <div className="img-wrapper" key={index}>
               <img src={work.w_img} alt={`Work ${index}`} />
-              <div className="hover-text">{work.w_name}</div> {/* Dynamic hover text */}
+              <div className="hover-text">
+                <p className="work-name">{work.w_name}</p>
+                <p className="work-type">{work.w_type}</p>
+              </div>
             </div>
           ))}
         </motion.div>

@@ -12,31 +12,37 @@ const Contact = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setFormStatus("sending"); // Set status to "sending" when form is submitted
-    const formData = new FormData(event.target);
-
-    formData.append("access_key", "cab23759-cf73-477c-bdcc-139e11e4e7ec");
-
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    }).then((res) => res.json());
-
-    if (res.success) {
-      setFormStatus("success"); // Update form status to success
-      setMessage("Form submitted successfully!"); // Set success message
-    } else {
-      setFormStatus("error"); // Update form status to error
-      setMessage("Form submission failed. Please try again."); // Set error message
+    setFormStatus("sending");
+  
+    try {
+      const formData = new FormData(event.target);
+      formData.append("access_key", "cab23759-cf73-477c-bdcc-139e11e4e7ec");
+      
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+  
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      }).then((res) => res.json());
+  
+      if (res.success) {
+        setFormStatus("success");
+        setMessage("Form submitted successfully!");
+      } else {
+        setFormStatus("error");
+        setMessage("Submission failed: " + res.message);
+      }
+    } catch (error) {
+      setFormStatus("error");
+      setMessage("Network error. Please try again later.");
     }
   };
+  
 
   return (
     <div id="contact" className="contact">

@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import theme_pattern from "../../assets/diamond-theme.png";
-import telephone_icon from "../../assets/telephone-2.png";
-import mail_icon from "../../assets/mail-2.png";
-import location_icon from "../../assets/location-2.png";
 import { motion } from "framer-motion";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaPhoneVolume } from "react-icons/fa";

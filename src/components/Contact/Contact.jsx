@@ -5,6 +5,9 @@ import telephone_icon from "../../assets/telephone-2.png";
 import mail_icon from "../../assets/mail-2.png";
 import location_icon from "../../assets/location-2.png";
 import { motion } from "framer-motion";
+import { HiOutlineMailOpen } from "react-icons/hi";
+import { FaPhoneVolume } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
   const [formStatus, setFormStatus] = useState("idle"); // New state for form status
@@ -76,13 +79,13 @@ const Contact = () => {
             contact anytime
           </p>
           <div className="contact-detail">
-            <img src={mail_icon} alt="" /> <p>contact.mikechege@gmail.com</p>
+          <HiOutlineMailOpen color='gold' size={22}  /><p>contact.mikechege@gmail.com</p>
           </div>
           <div className="contact-detail">
-            <img src={telephone_icon} alt="" /> <p>+254741238738</p>
+          <FaPhoneVolume color='#FF6F61' size={22} /> <p>+254741238738</p>
           </div>
           <div className="contact-detail">
-            <img src={location_icon} alt="" /> <p>Nakuru, Kenya</p>
+          <FaLocationDot color='#B57EDC' size={22} /> <p>Nakuru, Kenya</p>
           </div>
         </motion.div>
         <motion.form

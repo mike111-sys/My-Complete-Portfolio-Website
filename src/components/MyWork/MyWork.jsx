@@ -9,6 +9,7 @@ import project_4 from "../../assets/project_4.jpg";
 import project_5 from "../../assets/project_5.png";
 import project_6 from "../../assets/project_6.png";
 import { motion } from "framer-motion";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 // Updated mywork_data with two name fields (w_name and w_type)
 const mywork_data = [
@@ -67,7 +68,8 @@ const MyWork = () => {
           className="mywork-showmore"
         >
           <p>Show More</p>
-          <img src={arrow_icon} alt="" />
+          <FaLongArrowAltRight/>
+
         </motion.div>
       </div>
     </>

@@ -68,7 +68,7 @@ const MyWork = () => {
           className="mywork-showmore"
         >
           <p>Show More</p>
-          <FaLongArrowAltRight/>
+          <FaLongArrowAltRight size={20}/>
 
         </motion.div>
       </div>

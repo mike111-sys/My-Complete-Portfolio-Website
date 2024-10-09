@@ -39,7 +39,7 @@ const About = () => {
           
           className="about-para">
             <p>
-            I am a passionate full stack developer with a knack for crafting 
+            My name is Michael Chege. I am a passionate full stack developer with a knack for crafting 
             robust and scalable web applications. My goal is to leverage my
              expertise to create innovative solutions that drive business growth
               and deliver exceptional user experiences. I've developed my

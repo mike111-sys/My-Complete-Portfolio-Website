@@ -130,9 +130,10 @@
   .nav-mob-open {
     display: block;
     position: fixed;
-    top: 6px;
+    width: auto;
+    top: 2px;
     left: 0px;
-    height: 20px;
+    height: 30px;
     z-index: 2;
     cursor: pointer;
   }
@@ -140,8 +141,9 @@
     display: block;
     position: relative;
     top: 7px;
-    left: 122px;
-    width: 22px;
+    left: 110px;
+    width: auto;
+    height: 27px;
     cursor: pointer;
   }
   .logo {
@@ -177,6 +179,6 @@
     height: 20px;
   }
    .navbar .nav-mob-open{
-   height: 15px;
+   height: 24px;
   }
 }

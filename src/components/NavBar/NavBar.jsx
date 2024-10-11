@@ -5,6 +5,7 @@ import logo from "../../assets/logo.png";
 import underline_theme from "../../assets/underline-themeee.png";
 import menu_open from "../../assets/menull.png";
 import menu_close from "../../assets/menu_closeee.jpg";
+import { MdClose, MdMenuOpen } from "react-icons/md";
 
 const NavBar = () => {
   const [menu, SetMenu] = useState("home");
@@ -21,11 +22,10 @@ const NavBar = () => {
   return (
     <div className="navbar slide-from-top">
       <img src={logo} alt="" className="logo" />
-      <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
+      <MdMenuOpen style  onClick={openMenu} alt="" className="nav-mob-open" />
 
       <ul ref={menuRef} className="nav-menu">
-        <img
-          src={menu_close}
+        <MdClose
           onClick={closeMenu}
           className="nav-mob-close"
           alt=""

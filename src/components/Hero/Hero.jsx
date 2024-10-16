@@ -28,11 +28,13 @@ const Hero = () => {
           </p>
       
       <div className="hero-action">
+      <AnchorLink className="anchor-link" offset={20} href="#contact">
         <div className="hero-connect fade-in">
-          <AnchorLink className="anchor-link" offset={20} href="#contact">
+          
             Connect with me
-          </AnchorLink>
+         
         </div>
+        </AnchorLink>
         <div className="hero-resume fade-in">My resume</div>
       </div>
     </div>

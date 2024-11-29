@@ -63,7 +63,7 @@ const Modal = ({ isOpen, onClose }) => {
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium mb-1">Name:</label>
+            <label className="block text-start text-sm font-medium mb-1">Name:</label>
             <input
               type="text"
               value={name}
@@ -73,7 +73,7 @@ const Modal = ({ isOpen, onClose }) => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium mb-1">Email:</label>
+            <label className="block text-start text-sm font-medium mb-1">Email:</label>
             <input
               type="email"
               value={email}
@@ -83,7 +83,7 @@ const Modal = ({ isOpen, onClose }) => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium mb-1">Type of Website:</label>
+            <label className="block text-start text-sm font-medium mb-1">Type of Website:</label>
             <select
               value={websiteType}
               onChange={(e) => setWebsiteType(e.target.value)}
@@ -98,7 +98,7 @@ const Modal = ({ isOpen, onClose }) => {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-medium mb-1">Brief Description:</label>
+            <label className="block text-start text-sm font-medium mb-1">Brief Description:</label>
             <textarea
               value={description}
               onChange={(e) => setDescription(e.target.value)}

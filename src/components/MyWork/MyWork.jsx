@@ -1,56 +1,78 @@
 import React from "react";
-import myworkData from "../../components/myworkData";
+import "./MyWork.css";
+import theme_pattern from "../../assets/diamond-theme.png";
+
+import project_1 from "../../assets/project_1.png";
+import project_2 from "../../assets/project_2.png";
+import project_3 from "../../assets/project_3.png";
+import project_4 from "../../assets/project_4.jpg";
+import project_5 from "../../assets/project_5.png";
+import project_6 from "../../assets/project_6.png";
 import { motion } from "framer-motion";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
+// Updated mywork_data with two name fields (w_name and w_type)
+const mywork_data = [
+  { w_no: 1, w_name: "Web App", w_type: "-React Js", w_img: project_1 },
+  { w_no: 2, w_name: "Web App", w_type: "-MERN stack", w_img: project_2 },
+  { w_no: 3, w_name: "Web App", w_type: "-MERN stack", w_img: project_3 },
+  { w_no: 4, w_name: "Web App", w_type: "-React Js", w_img: project_4 },
+  { w_no: 5, w_name: "Web App", w_type: "-React Js", w_img: project_5 },
+  { w_no: 6, w_name: "Web App", w_type: "-React Js", w_type_1: "-Express Js", w_type_2: "-MySQL", w_img: project_6 }
+];
 
 const MyWork = () => {
   return (
-    <div className="py-16 px-4 sm:px-8 lg:px-16 bg-gray-100" id="portfolio">
-      {/* Title Section */}
-      <div className="text-center mb-12">
+    <>
+      <div className="mywork-title">
         <motion.h1
-whileInView={{ opacity: 1, y: 0 }}
-initial={{ opacity: 0, y: -30 }}
-transition={{ duration: 1.5 }}
-
-          className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800"
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -30 }}
+          transition={{ duration: 1.5 }}
         >
-          My Latest Work
+          My latest work
         </motion.h1>
-       
+        <motion.img
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -70 }}
+          transition={{ duration: 1.5 }}
+          src={theme_pattern}
+          alt=""
+        />
       </div>
 
-      {/* Projects Grid */}
-      <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-      >
-        {myworkData.map((work) => (
-          <div
-            key={work.id}
-            className="relative group overflow-hidden rounded-lg shadow-lg transition-all transform hover:scale-105"
-          >
-            {/* Project Image */}
-            <img
-              src={work.img}
-              alt={work.name}
-              className="w-full h-full object-cover rounded-lg group-hover:opacity-80 transition-opacity duration-300"
-            />
-
-            {/* Hover Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center rounded-lg transition-opacity duration-300">
-              <p className="text-green-400 font-bold text-xl mb-2">{work.name}</p>
-              {work.types.map((type, index) => (
-                <p key={index} className="text-pink-500 text-sm">
-                  {type}
-                </p>
-              ))}
+      <div id="work" className="mywork fade-in">
+        <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 100 }}
+          transition={{ duration: 1.5 }}
+          className="mywork-container"
+        >
+          {mywork_data.map((work, index) => (
+            <div className="img-wrapper" key={index}>
+              <img src={work.w_img} alt={`Work ${index}`} />
+              <div className="hover-text">
+                <p className="work-name">{work.w_name}</p>
+                <p className="work-type">{work.w_type}</p>
+                <p className="work-type-1">{work.w_type_1}</p>
+                <p className="work-type-2">{work.w_type_2}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </motion.div>
 
-      {/* Show More Section */}
-      
-    </div>
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          transition={{ duration: 1.5 }}
+          className="mywork-showmore"
+        >
+          <p>Show More</p>
+          <FaLongArrowAltRight size={20}/>
+
+        </motion.div>
+      </div>
+    </>
   );
 };
 

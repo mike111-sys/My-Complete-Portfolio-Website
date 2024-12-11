@@ -190,6 +190,21 @@ const NavBar = () => {
                     Testimonials
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="faqs"
+                    smooth={true}
+                    duration={1000}
+                    offset={-90}
+                    className="block px-4 py-2 text-nowrap hover:bg-gray-200 cursor-pointer"
+                    onClick={() => {
+                      setMenu("about");
+                      setIsDropdownOpen(false);
+                    }}
+                  >
+                    FAQs
+                  </Link>
+                </li>
               </ul>
             )}
           </li>
@@ -288,6 +303,21 @@ const NavBar = () => {
                   }}
                 >
                   Testimonials
+                </Link>
+                </li>
+                <li>
+              <Link
+                  to="faqs"
+                  smooth={true}
+                  duration={1000}
+                  offset={-130}
+                  className="block px-4 py-2 text-nowrap hover:bg-gray-200 cursor-pointer"
+                  onClick={() => {
+                    setMenu("about");
+                    setIsDropdownOpen(false);
+                  }}
+                >
+                  FAQs
                 </Link>
                 </li>
             </ul>

@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import WhyMe from './components/WhyMe/WhyMe';
 import Skills from './components/Skills/Skills';
 import Testimonials from './components/Testimonials/Testimonials';
+import Faqs from './components/Faqs/Faqs';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,6 +36,7 @@ const App = () => {
           <Skills />
           <WhyMe />
           <Testimonials />
+          <Faqs />
           <Services />
           <MyWork />
           <Contact />

@@ -14,7 +14,7 @@ const Faqs = () => {
       questions: [
         {
           question: 'What services do you offer?',
-          answer: 'I specialize in front-end and back-end web development, including responsive design, user-friendly interfaces, and integration with backend technologies.',
+          answer: 'I specialize in front-end and back-end web development, including responsive design, user-friendly interfaces and integration with databases.',
         },
         {
           question: 'What industries do you typically work with?',

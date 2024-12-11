@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import profile_img from "../../assets/mikee-pic.jpg";
+import profile_img from "../../assets/airb.jpg";
 import TypingEffect from "./TypingEffect";
 import Modal from "./Modal";
 
@@ -28,7 +28,7 @@ const Hero = () => {
       <img
         src={profile_img}
         alt="Michael Chege"
-        className="rounded-full h-64 w-auto sm:h-80 sm:w-80 animate-fade-in"
+        className="rounded-full h-64 w-auto sm:h-96 sm:w-auto animate-fade-in"
       />
 
       {/* Hero Text */}

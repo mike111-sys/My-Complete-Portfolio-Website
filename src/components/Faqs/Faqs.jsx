@@ -14,7 +14,7 @@ const Faqs = () => {
       questions: [
         {
           question: 'What services do you offer?',
-          answer: 'I specialize in front-end and back-end web development, including responsive design, user-friendly interfaces and integration with databases.',
+          answer: 'I specialize in digital marketing, front-end and back-end web development, including responsive design, user-friendly interfaces and integration with databases.',
         },
         {
           question: 'What industries do you typically work with?',
@@ -72,7 +72,7 @@ const Faqs = () => {
         },
         {
           question: 'What is your pricing model?',
-          answer: 'Pricing depends on the project size and complexity. I can provide a detailed estimate after discussing your needs.',
+          answer: 'Pricing depends on the project size and complexity. My pricing is designed to be affordable while delivering top-notch quality. I provide clear estimates upfront, so you can plan your budget confidently with no hidden costs. Count on me for reliable service that won\'t break the bank.',
         },
       ],
     },

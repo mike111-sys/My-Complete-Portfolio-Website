@@ -44,13 +44,13 @@ const Hero = () => {
       {/* Action Buttons */}
       <div className="flex items-center gap-3 md:gap-6 text-lg sm:text-xl font-light">
         <AnchorLink
-          className="px-3 py-2 sm:px-6 sm:py-3 text-nowrap rounded-full bg-gradient-to-r from-orange-500 to-purple-500 text-white cursor-pointer hover:scale-105 transition-transform"
+          className="px-3 py-2 animate-fade-in sm:px-6 sm:py-3 text-nowrap rounded-full bg-gradient-to-r from-orange-500 to-purple-500 text-white cursor-pointer hover:scale-105 transition-transform"
           offset={20}
           href="#contact"
         >
           Connect with me
         </AnchorLink>
-        <div onClick={handleBookAppointment} className="px-2 py-2 sm:px-3 sm:py-3 text-nowrap rounded-full border border-indigo-700 cursor-pointer hover:border-green-500 transition-all">
+        <div onClick={handleBookAppointment} className="animate-fade-in px-2 py-2 sm:px-3 sm:py-3 text-nowrap rounded-full border border-indigo-700 cursor-pointer hover:border-green-500 transition-all">
           Book appointment
         </div>
       </div>

@@ -53,7 +53,7 @@ const NavBar = () => {
         scrolled
           ? "bg-white text-gray-700 shadow-lg fixed w-full top-0 z-50 transition-all duration-300 ease-in-out"
           : "bg-transparent text-black"
-      } flex justify-between items-center px-12 py-6 md:py-8 lg:py-4 sm:py-7`}
+      }  flex justify-between items-center px-12 py-6 md:py-8 lg:py-4 sm:py-7`}
       style={{
         transition: "top 0.3s ease, background-color 0.3s ease",
       }}
@@ -70,7 +70,7 @@ const NavBar = () => {
       {/* Mobile Menu Icon */}
       <MdMenuOpen
         onClick={toggleMenu}
-        className="lg:hidden h-20 block absolute left-2 text-2xl cursor-pointer"
+        className="lg:hidden animate-fade-in h-20 block absolute left-2 text-2xl cursor-pointer"
       />
 
       {/* Mobile Sliding Menu */}
@@ -325,7 +325,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      <h1 className="absolute right-6 sm:block lg:relative sm:ml-0  ml-5 font-mono font-extrabold text-lg text-lime-500">
+      <h1 className="animate-fade-in md:animate-none absolute right-6 sm:block lg:relative sm:ml-0  ml-5 font-mono font-extrabold text-lg text-lime-500">
         Michael Chege
       </h1>
       <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
